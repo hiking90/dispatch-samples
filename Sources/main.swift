@@ -23,7 +23,7 @@ class Worker {
     }
 
     func start() {
-        Worker.mQueue.asyncAfter(deadline: .now() + .milliseconds(mInterval), execute: self.execute)                    
+        Worker.mQueue.asyncAfter(deadline: .now() + .milliseconds(mInterval), execute: self.execute)
     }
 
     func execute() {
